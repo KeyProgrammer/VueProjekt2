@@ -138,6 +138,10 @@
     }
 }
 @media(max-width: 900px) {
+
+    .menu a.menu-option {
+        font-size: 16px;
+    }
     .menu-logo {
         background-image: url(../images/logotyp.png);
         background-size: 290px;

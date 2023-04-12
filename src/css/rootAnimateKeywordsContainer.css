@@ -4,7 +4,7 @@
   }
   
   .root-animate-keywords-container-content {
-    font-size: 22px;
+    font-size: 16px;
     text-align: center;
     width: 90%;
     margin: 0 auto;
@@ -27,11 +27,11 @@
   
   @keyframes animate-keywords {
     0% {
-      content: 'Think Two';
+      content: 'Think Two.';
     }
   
     100% {
-      content: 'Code One';
+      content: 'Code One.';
     }
   }
   
@@ -46,7 +46,7 @@
       }
   
       .root-animate-keywords-container-content {
-        font-size: 20px;
+        /* font-size: 20px; */
       }
     }
   
@@ -56,7 +56,7 @@
       }
   
       .root-animate-keywords-container-content {
-        font-size: 18px;
+        /* font-size: 18px; */
       }
     }
   }

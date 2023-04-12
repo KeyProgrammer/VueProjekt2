@@ -1,7 +1,6 @@
 <!-- eslint-disable max-len -->
 <template>
   <menu-component />
-
   <main class="content" style="padding-bottom: 180px;">
 
     <!-- Animate-kewords-container -->

@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from 'vue-router';
+import { createRouter, createWebHashHistory } from 'vue-router'
 import About from '../views/About.vue';
 import Carrer from '../views/Career.vue';
 import Contact from '../views/Contact.vue';
@@ -37,11 +37,11 @@ const routes = [
     name: 'Technology',
     component: Technology,
   },
-];
+]
 
 const router = createRouter({
-  history: createWebHistory('/VueProjekt/'),
-  routes
+  history: createWebHashHistory('/VueProjekt/'),
+  routes,
 });
 
 export default router;

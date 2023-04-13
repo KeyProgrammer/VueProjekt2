@@ -1,8 +1,7 @@
 <!-- eslint-disable max-len -->
 <template>
-  <menu-component />
-  <main class="content" style="padding-bottom: 180px;">
-
+  <MenuComponent />
+  <main class="content" style="padding-bottom: 150px;">
     <!-- Animate-kewords-container -->
     <div class="root-animate-keywords-container">
       <div class="root-animate-keywords-container-words">
@@ -17,7 +16,6 @@
       </div>
     </div>
     <!-- Animate-kewords-container end -->
-
     <!-- Information container -->
     <div class="information-container">
       <div class="information-container-left">
@@ -34,8 +32,7 @@
           Wyzwania zawsze szczególnie motywują nas do pracy.
         </p>
         <div>
-          <button @click="$router.push('/offert')" class="information-container-right-button">Sprawdź Naszą
-            Ofertę</button>
+          <button @click="$router.push('/offert')" class="information-container-right-button">Sprawdź Naszą Ofertę</button>
         </div>
       </div>
     </div>
@@ -61,3 +58,5 @@ export default {
   },
 };
 </script>
+
+<style></style>

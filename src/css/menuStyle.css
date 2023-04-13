@@ -1,7 +1,8 @@
 .header {
     height: 100px;
-    background: #132e6c;
-    box-shadow: inset 5px 5px 50px 5px #114ace;
+     background: #132e6c;
+     /* background: #132e6c;
+    box-shadow: inset 5px 5px 50px 5px #114ace; */
 }
 
 .menu-logo {
@@ -27,7 +28,7 @@
 
 .menu a.menu-option {
     color: white;
-    font-size: 19.5px;
+    font-size: 20px;
     padding: 15px 15px;
     text-transform: uppercase;
 }
@@ -37,7 +38,8 @@
     border-radius: 10px;
     border: 1px solid white;
     transition: 0.3s;
-    box-shadow: inset 5px 5px 10px 5px #114ace;
+    box-shadow: inset 5px 5px 10px 5px #1d4299;
+    /* box-shadow: inset 5px 5px 10px 5px #114ace; */
 }
 
 .menu-options ul li {
@@ -49,51 +51,63 @@
     margin: 35px;
 }
 
-@media(max-width: 1120px) {
+@media only screen and (max-width: 1280px) {
+    .menu a.menu-option {
+        font-size: 19px;
+        padding: 13px 13px;
+    }
+}
 
-    .menu-underline-animation {
-        display: inline-block;
-        position: relative;
+@media(max-width: 1120px) {
+  .menu-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: black;
+  }
+
+  .menu-underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1.5px;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+
+  .menu a.menu-option {
         color: black;
-      }
-      
-      .menu-underline-animation::after {
-        content: '';
-        position: absolute;
-        width: 100%;
-        transform: scaleX(0);
-        height: 1.5px;
-        bottom: 0;
-        left: 0;
-        background-color: black;
-        transform-origin: bottom right;
-        transition: transform 0.25s ease-out;
-      }
-      
-      .menu-underline-animation:hover::after {
+    }
+
+  .menu-underline-animation:hover::after {
         transform: scaleX(1);
         transform-origin: bottom left;
       }
 
-    .menu a.menu-option {
-        color: black;
-    }
+  .header {
+    height: 200px;
+    background-color:white;
+    /* background-color: #132e6c;
+    box-shadow: inset 5px 5px 50px 5px #114ace; */
+  }
 
-    .menu {
-        float: left;
+  .menu-logo {
+    background-image: url(../images/logotyp.png);
+    background-repeat: no-repeat;
+    background-size: 440px;
+    height: 50%;
+    width: 100%;
+    background-color: #132e6c;
+  }
+
+  .menu {
+        background-color: white;
         width: 100%;
         margin-bottom: 20px;
-    }
-
-    .menu-logo {
-        float: left;
-        padding: 7px;
-        width: 90%;
-        height: 100%;
-        background-image: url(../images/logotyp.png);
-        background-repeat: no-repeat;
-        background-size: 440px;
-        background-origin: content-box;
+        height: 100px;
     }
 
     .menu-options {
@@ -105,56 +119,7 @@
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         animation: mymove 0.6s;
         position: relative;
-    }
-
-    @keyframes mymove {
-        from {
-            top: -4%;
-        }
-
-        to {
-            top: 0%;
-        }
-    }
-
-    .menu-options ul {
-        width: 100%;
-        margin: 0px;
-        padding: 35px;
-        top: 80px;
-        text-align: center;
-
-    }
-
-    .menu a.menu-option:hover {
-        background: none;
-        box-shadow: none;
-        border: 0;
-    }
-
-    .menu-options ul li {
-        display: inline-block;
-        margin-left: 20px;
-    }
-}
-@media(max-width: 900px) {
-
-    .menu a.menu-option {
-        font-size: 16px;
-    }
-    .menu-logo {
-        background-image: url(../images/logotyp.png);
-        background-size: 290px;
-        padding: 25px;
-        background-position: center;
-        width: 100%;
-    }
-
-    .menu-options {
-        margin-top: 1px;
-        margin-bottom: 10px;
-        border-bottom: 1px solid black;
-        position: relative;
+        height: 100%;
     }
 
     @keyframes mymove {
@@ -165,7 +130,53 @@
         to {
             top: 0%;
         }
+    } 
+    .menu-options ul {
+        width: 100%;
+        margin: 0px;
+        padding: 35px;
+        top: 80px;
+        text-align: center;
     }
+    .menu a.menu-option:hover {
+        background: none;
+        box-shadow: none;
+        border: 0;
+    }
+    .menu-options ul li {
+        display: inline-block;
+        margin-left: 20px;
+    }
+}
+@media(max-width: 900px) {
+
+    .header {
+        height: 345px;
+        background-color: white;
+      }
+
+    .menu a.menu-option {
+        font-size: 20px;
+    }
+    .menu-logo {
+        background-image: url(../images/logotyp.png);
+        background-size: 290px;
+        padding: 25px;
+        background-position: center;
+        width: 100%;
+        height: 100px;
+        background-color: #132e6c;
+    }
+
+    @keyframes mymove {
+        from {
+            top: -2%;
+        }
+
+        to {
+            top: 0%;
+        }
+    } 
 
     .menu-options ul li {
         font-size: 20px;
@@ -187,6 +198,12 @@
     .menu {
         float: left;
         width: 100%;
-        height: 230px;
+        height: 245px;
+    } 
+} 
+
+@media only screen and (max-width: 600px) {
+    .menu a.menu-option {
+        font-size: 17px;
     }
 }

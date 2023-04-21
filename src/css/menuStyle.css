@@ -3,6 +3,8 @@
      background: #132e6c;
      /* background: #132e6c;
     box-shadow: inset 5px 5px 50px 5px #114ace; */
+    box-shadow: 1px 8px 27px -10px rgba(32, 32, 37, 1);
+    border-bottom: 1px solid black;
 }
 
 .menu-logo {
@@ -55,6 +57,10 @@
     .menu a.menu-option {
         font-size: 19px;
         padding: 13px 13px;
+    }
+    .header {
+        border: none;
+        box-shadow: none;
     }
 }
 

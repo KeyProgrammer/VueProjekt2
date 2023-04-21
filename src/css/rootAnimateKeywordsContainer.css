@@ -25,15 +25,42 @@
   content: "";
 }
 
+
 @keyframes animate-keywords {
   0% {
-    content: "Think Two.";
+      opacity:0;
+      content: "Think Two.";
+      
   }
 
-  100% {
-    content: "Code One.";
+   25% {
+      content: "Think Two.";
+      opacity:1;
+  }
+  
+  40% {
+      opacity:0;
+      content: "Think Two.";
+     
+  }
+
+   45% {
+      opacity:0;
+      content: "Code One.";
+     
+  }
+  75% {
+      content: "Code One.";
+      opacity:1;
+  }
+
+   100% {
+       opacity:0;
+      content: "Code One.";
+      
   }
 }
+
 
 @media only screen and (max-width: 1280px) {
   .root-animate-keywords-container-words {

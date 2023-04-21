@@ -1,9 +1,8 @@
 <template>
   <menu-component/>
     <main class="content">
-        <section class="Programmer-section" style="margin: 20px;">
-            <p> O nas </p>
-        </section>
+          <h1>JESZCZE NIE ZAIMPLEMENTOWANE !!!</h1>
+            <p> Zakłada O nas </p>
     </main>
     <footer-component />
 </template>

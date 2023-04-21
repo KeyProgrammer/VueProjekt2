@@ -52,7 +52,7 @@ export default {
 }
 
 .footer-bottom p {
-  font-size: 22px;
+  font-size: 15px;
   text-align: center;
 }
 
@@ -122,7 +122,7 @@ button {
   }
 
   .footer-bottom p {
-    font-size: 17px;
+    font-size: 15px;
   }
 
   .footer-top {

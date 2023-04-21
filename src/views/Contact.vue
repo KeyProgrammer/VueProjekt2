@@ -1,13 +1,11 @@
 <template>
-  <menu-component/>
-    <main class="content" style="margin: 20px;">
-        <section class="Programmer-section">
-            <p> Kontakt </p>
-        </section>
-    </main>
-  <footer-component/>
+  <menu-component />
+  <main class="content">
+    <h1>JESZCZE NIE ZAIMPLEMENTOWANE !!!</h1>
+    <p>Zakładka o Kontakt</p>
+  </main>
+  <footer-component />
 </template>
-
 <script>
 
 import MenuComponent from '../components/MenuComponent.vue';

@@ -1,27 +1,8 @@
 <template>
   <menu-component />
-  <main class="content" style="padding-bottom: 150px">
-      <!-- Information container -->
-      <div class="information-container">
-        <div class="information-container-left">
-          <img src="../images/PhotoRootSideOne.jpg" alt="photo">
-        </div>
-        <div class="information-container-right">
-          <h1>Doświadczenie i profesjonalizm</h1> <br>
-          <p>
-            Możesz na nas liczyć w zakresie organizacji<br>
-            procesów biznesowych w firmie, doborze <br>
-            technologii,organizacji projektów i procesów IT. <br>
-            Dzięki naszemu doświadczeniu możemy zrobić <br>
-            dla Ciebie rzeczy,które wydają się niemożliwe. <br>
-            Wyzwania zawsze szczególnie motywują nas do pracy.
-          </p>
-          <div>
-            <button @click="$router.push('/offert')" class="information-container-right-button">Sprawdź Naszą
-              Ofertę</button>
-          </div>
-        </div>
-      </div>
+  <main class="content">
+    <h1>JESZCZE NIE ZAIMPLEMENTOWANE !!!</h1>
+    <p>Zakładka o Technologiach</p>
   </main>
   <footer-component />
 </template>

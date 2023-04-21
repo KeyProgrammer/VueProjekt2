@@ -35,13 +35,13 @@
 
 <script>
 export default {
-  methods: {
-    showMenu: function() {
-      let nav = document.querySelector(".menu-options");
-      nav.classList.toggle("active");
-      let header = document.querySelector(".header");
-      header.classList.toggle("active");
-   }
-  }
+  // methods: {
+  //   showMenu: function() {
+  //     let nav = document.querySelector(".menu-options");
+  //     nav.classList.toggle("active");
+  //     let header = document.querySelector(".header");
+  //     header.classList.toggle("active");
+  //  }
+  // }
 }
 </script>

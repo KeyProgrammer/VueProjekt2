@@ -1,11 +1,10 @@
 <template>
-  <menu-component/>
-    <main class="content">
-        <section class="Programmer-section" style="margin: 20px;">
-            <p> Karierdd</p>
-        </section>
-    </main>
-  <footer-component/>
+  <menu-component />
+  <main class="content">
+    <h1>JESZCZE NIE ZAIMPLEMENTOWANE !!!</h1>
+    <p>Zakładka o Karierze</p>
+  </main>
+  <footer-component />
 </template>
 
 <script>

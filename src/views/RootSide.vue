@@ -1,7 +1,7 @@
 <!-- eslint-disable max-len -->
 <template>
   <MenuComponent />
-  <main class="content" style="padding-bottom: 150px;">
+  <main class="content">
     <!-- Animate-kewords-container -->
     <div class="root-animate-keywords-container">
       <div class="root-animate-keywords-container-words">
@@ -59,4 +59,10 @@ export default {
 };
 </script>
 
-<style></style>
+<style scoped>
+.content {
+   position: relative;
+   margin-bottom: 150px;
+   height: auto;
+}
+</style>

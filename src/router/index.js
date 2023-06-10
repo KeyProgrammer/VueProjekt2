@@ -1,46 +1,48 @@
-import { createRouter, createWebHashHistory } from 'vue-router'
-import About from '../views/About.vue';
-import Carrer from '../views/Career.vue';
-import Contact from '../views/Contact.vue';
-import Offert from '../views/Offert.vue';
-import Technology from '../views/Technology.vue';
-import RootSide from '../views/RootSide.vue';
+import { createRouter, createWebHashHistory, RouterView  } from 'vue-router'
+import Tr from "@/i18n/translation"
 
 const routes = [
   {
-    path: '/',
-    name: 'RootSide',
-    component: RootSide,
-  },
-  {
-    path: '/about',
-    name: 'About',
-    component: About,
-  },
-  {
-    path: '/career',
-    name: 'Carrer',
-    component: Carrer,
-  },
-  {
-    path: '/contact',
-    name: 'Contact',
-    component: Contact,
-  },
-  {
-    path: '/offert',
-    name: 'Offert',
-    component: Offert,
-  },
-  {
-    path: '/technology',
-    name: 'Technology',
-    component: Technology,
-  },
+    path: "/:locale?",
+    component: RouterView,
+    beforeEnter: Tr.routeMiddleware,
+    children: [
+      {
+        path: '',
+        name: 'RootSide',
+        component: () => import ('@/views/RootSide.vue'),
+      },
+      {
+        path: 'about',
+        name: 'About',
+        component: () => import ('@/views/About.vue'),
+      }, 
+      {
+        path: 'project',
+        name: 'Project',
+        component: () => import ('../views/Project.vue')
+      },
+      {
+        path: 'contact',
+        name: 'Contact',
+        component: () => import ('@/views/Contact.vue')
+      },
+      {
+        path: 'offert',
+        name: 'Offert',
+        component: () => import ('@/views/Offert.vue')
+      },
+      {
+        path: 'technology',
+        name: 'Technology',
+        component: () => import ('@/views/Technology.vue'),
+      },
+    ]
+  }
 ]
 
 const router = createRouter({
-  history: createWebHashHistory('/VueProjekt/'),
+  history: createWebHashHistory(import.meta.env.VITE_BASE_URL),
   routes,
 });
 

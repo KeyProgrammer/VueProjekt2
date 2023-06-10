@@ -1,47 +1,58 @@
-<!-- eslint-disable max-len -->
 <template>
   <header class="header">
-    <router-link to="/">
+    <router-link :to="Tr.i18nRoute({ name: 'RootSide' })">
       <div class="menu-logo"></div>
     </router-link>
     <nav class="menu">
       <div class="menu-options">
         <ul>
           <li>
-            <p class="menu-underline-animation"><router-link to="/offert" class="menu-option">Oferta</router-link></p>
+            <p class="menu-underline-animation">
+              <router-link :to="Tr.i18nRoute({ name: 'Offert' })" class="menu-option">{{ $t('menu&footer.linkOption1') }}</router-link>
+            </p>
           </li>
           <li>
-            <p class="menu-underline-animation"><router-link to="/technology"
-                class="menu-option">Technologie</router-link></p>
+            <p class="menu-underline-animation">
+              <router-link :to="Tr.i18nRoute({ name: 'Technology' })" class="menu-option">{{ $t('menu&footer.linkOption2') }}</router-link>
+            </p>
           </li>
           <li>
-            <p class="menu-underline-animation"><router-link to="/about" class="menu-option">O Nas</router-link></p>
+            <p class="menu-underline-animation">
+              <router-link :to="Tr.i18nRoute({ name: 'About' })" class="menu-option">{{ $t('menu&footer.linkOption3') }}</router-link>
+            </p>
           </li>
           <li>
-            <p class="menu-underline-animation"><router-link to="/career" class="menu-option">Kariera</router-link></p>
+            <p class="menu-underline-animation">
+              <router-link :to="Tr.i18nRoute({ name: 'Project' })" class="menu-option">{{ $t('menu&footer.linkOption4') }}</router-link>
+            </p>
           </li>
           <li>
-            <p class="menu-underline-animation"><router-link to="/contact" class="menu-option">Kontakt</router-link></p>
+            <p class="menu-underline-animation">
+              <router-link :to="Tr.i18nRoute({ name: 'Contact' })" class="menu-option">{{ $t('menu&footer.linkOption5') }}</router-link>
+            </p>
           </li>
         </ul>
       </div>
+   
     </nav>
+    <div class="languageSwitcher"><LanguageSwitcher/></div>
   </header>
 </template>
 
-<!-- <div id="hamburger">
-  <i class="fa fa-bars" v-on:click="showMenu()"></i>
-</div> -->
-
 <script>
+import Tr from "../i18n/translation"
+import LanguageSwitcher from "./LanguageSwitcher.vue";
+
 export default {
-  // methods: {
-  //   showMenu: function() {
-  //     let nav = document.querySelector(".menu-options");
-  //     nav.classList.toggle("active");
-  //     let header = document.querySelector(".header");
-  //     header.classList.toggle("active");
-  //  }
-  // }
+    setup() {
+        return { Tr }; 
+    },
+    components: { 
+      LanguageSwitcher 
+    }
 }
 </script>
+
+<style scoped>
+@import '../css/MenuComponentStyle.css';
+</style>

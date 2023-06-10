@@ -5,20 +5,25 @@
       <div class="footer-options">
         <ul>
           <li>
-            <p><router-link to="/offert" class="footer-option">Oferta</router-link></p>
+            <p><router-link :to="Tr.i18nRoute({ name: 'Offert' })" class="footer-option">{{ $t('menu&footer.linkOption1')
+            }}</router-link></p>
           </li>
           <li>
-            <p><router-link to="/technology" class="footer-option">Technologie</router-link>
+            <p><router-link :to="Tr.i18nRoute({ name: 'Technology' })" class="footer-option">{{
+              $t('menu&footer.linkOption2') }}</router-link>
             </p>
           </li>
           <li>
-            <p><router-link to="/about" class="footer-option">O Nas</router-link></p>
+            <p><router-link :to="Tr.i18nRoute({ name: 'About' })" class="footer-option">{{ $t('menu&footer.linkOption3')
+            }}</router-link></p>
           </li>
           <li>
-            <p><router-link to="/career" class="footer-option">Kariera</router-link></p>
+            <p><router-link :to="Tr.i18nRoute({ name: 'Project' })" class="footer-option">{{ $t('menu&footer.linkOption4')
+            }}</router-link></p>
           </li>
           <li>
-            <p><router-link to="/contact" class="footer-option">Kontakt</router-link></p>
+            <p><router-link :to="Tr.i18nRoute({ name: 'Contact' })" class="footer-option">{{ $t('menu&footer.linkOption5')
+            }}</router-link></p>
           </li>
         </ul>
       </div>
@@ -34,7 +39,12 @@
 </template>
 
 <script>
+import Tr from "@/i18n/translation"
+
 export default {
+  setup() {
+    return { Tr }
+  },
   methods: {
     topFunction() {
       document.body.scrollTop = 0;
@@ -44,89 +54,7 @@ export default {
 };
 </script>
 
-<style lang="css" scoped>
-.footer-bottom {
-  width: 100%;
-  height: 50px;
-  padding: 15px;
-}
+<style scoped>
+@import "../css/FooterComponentStyle.css";
+</style>
 
-.footer-bottom p {
-  font-size: 15px;
-  text-align: center;
-}
-
-.footer-top-menu {
-  padding-top: 10px;
-  width: 100%;
-  height: 50px;
-}
-
-.footer-options {
-  width: 90%;
-  height: 100%;
-  float: left;
-}
-
-.footer-top {
-  width: 10%;
-  height: 100%;
-  float: left;
-  padding-right: 20px;
-}
-
-button {
-  float: right;
-  background-image: url(../images/arrow.png);
-  background-size: cover;
-  background-color: black;
-  width: 30px;
-  height: 30px;
-  border: none;
-}
-
-.footer ul li {
-  display: inline-block;
-}
-
-.footer a.footer-option {
-  color: white;
-  font-size: 22px;
-  padding: 15px 15px;
-}
-
-.footer a.footer-option:hover {
-  color: rgb(92, 92, 230);
-  transition: 0.3s;
-}
-
-.footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 110px;
-  background-color: black;
-  color: whitesmoke;
-}
-@media(max-width: 900px) {
-  button {
-    height: 40px;
-    width: 40px;
-  }
-  .footer-options {
-    display: none;
-  }
-
-  .footer-bottom {
-    float: left;
-  }
-
-  .footer-bottom p {
-    font-size: 15px;
-  }
-
-  .footer-top {
-    float: left;
-    width: 55%;
-  }
-}</style>

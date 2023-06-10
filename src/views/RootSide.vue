@@ -1,68 +1,51 @@
-<!-- eslint-disable max-len -->
 <template>
-  <MenuComponent />
   <main class="content">
     <!-- Animate-kewords-container -->
     <div class="root-animate-keywords-container">
       <div class="root-animate-keywords-container-words">
         <span class="root-animate-keywords-container-words-animation"></span>
       </div>
-      <div class="root-animate-keywords-container-content">
-        Nasza metodologia pracy opiera się na dwóch kluczowych krokach,które stanowią fundament naszego podejścia. <br>
-        Dzięki ich stosowaniu, jesteśmy w stanie zapewnić naszym Klientom nie tylko efektywność, ale
-        również staranne i przemyślane rozwiązania. <br>
-        Nasze podejście stanowi w pełni dopasowaną do potrzeb biznesowych Klientów odpowiedź, pozwalającą na osiągnięcie
-        wyznaczonych celów i wzrostu ich przedsiębiorstw. <br>
+      <div class="root-animate-keywords-container-content" v-html="$t('RootSide.root-animate-keywords-container-content-text')">
       </div>
     </div>
     <!-- Animate-kewords-container end -->
+
     <!-- Information container -->
     <div class="information-container">
       <div class="information-container-left">
         <img src="../images/PhotoRootSideOne.jpg" alt="photo">
       </div>
       <div class="information-container-right">
-        <h1>Doświadczenie i profesjonalizm</h1> <br>
-        <p>
-          Możesz na nas liczyć w zakresie organizacji<br>
-          procesów biznesowych w firmie, doborze <br>
-          technologii,organizacji projektów i procesów IT. <br>
-          Dzięki naszemu doświadczeniu możemy zrobić <br>
-          dla Ciebie rzeczy,które wydają się niemożliwe. <br>
-          Wyzwania zawsze szczególnie motywują nas do pracy.
-        </p>
+        <h1 v-html="$t('RootSide.information-container-right-h1')"></h1> <br>
+        <p v-html="$t('RootSide.information-container-right-text')"></p>
         <div>
-          <button @click="$router.push('/offert')" class="information-container-right-button">Sprawdź Naszą Ofertę</button>
+          <button @click="$router.push(Tr.i18nRoute({ name: 'Offert' }))" class="information-container-right-button" v-html="$t('RootSide.information-container-right-button-text')"></button>
         </div>
       </div>
     </div>
     <!-- Information container end -->
+
   </main>
-  <footer-component />
 </template>
 
 <script>
-
-import MenuComponent from '../components/MenuComponent.vue';
-import FooterComponent from '../components/FooterComponent.vue';
-import '../css/menuStyle.css';
-import '../css/rootAnimateKeywordsContainer.css';
-import '../css/informationContainerStyle.css';
+import Tr from "@/i18n/translation";
 
 export default {
-  // eslint-disable-next-line vue/multi-word-component-names
-  name: 'About',
-  components: {
-    MenuComponent,
-    FooterComponent,
-  },
+  name: "RootSide",
+  setup() {
+    return { Tr }
+  }
 };
 </script>
 
 <style scoped>
+@import "../css/Root-AnimateKeywordsStyle.css";
+@import "../css/Root-informationContainerStyle.css";
 .content {
    position: relative;
    margin-bottom: 150px;
    height: auto;
-}
+} 
+/* na to warto zwrócić uwagę przy budowie innych komponentów */
 </style>

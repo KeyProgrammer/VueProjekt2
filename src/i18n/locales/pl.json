@@ -12,10 +12,6 @@
         "information-container-right-h1": "Doświadczenie i profesjonalizm",
         "information-container-right-button-text": "Sprawdź Naszą Ofertę"
     },
-    "about": {
-        "h1": "JESZCZE NIE ZAIMPLEMENTOWANE !!!",
-        "donations": "Wynosi: {donations}"
-    },
     "Offert": {
         "container-content": {
             "uxDesignContent":"<h1>Projektowanie UI/UX</h1><p>Zadbamy o pozytywne doświadczenie klientów korzystających z Twojego serwisu. Strona internetowa musi być funkcjonalna, ale i dająca przyjemność, by użytkownik chciał do niej wracać. Nasze działania z zakresu UX opieramy na pięciu krokach:<br><br> 1) Badania z użytkownikami - każdy projekt rozpoczynamy od określenia potrzeb konsumentów; możemy przeprowadzić dla Ciebie badania focusowe, sesje wywiadów pogłębionych, badania z użyciem eyetrackera;<br> 2) Analiza webowa z wykorzystaniem profesjonalnych narzędzi, np. IBM Tealeaf;<br> 3) Audyty eksperckie - zidentyfikujemy te obszary, które mogą negatywnie wpływać na funkcjonalność i konwersję;<br> 4) Projektowanie - dzięki zebraniu twardych danych o zachowaniach użytkowników nasze rozwiązania webowe mobilne są realnie dopasowane do ich oczekiwań;<br> 5) Testy użyteczności - sprawdzamy koncepcje i założeń projektowe przed wdrażaniem za pomocą testów z użytkownikami i testów A/B na naszej platformie Abee TST.<br></p>",

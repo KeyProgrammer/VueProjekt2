@@ -12,10 +12,6 @@
         "information-container-right-h1": "Experience and professionalism",
         "information-container-right-button-text": "Check Our Offer"
     },
-    "about": {
-        "h1": "NOT IMPLEMENTED YET !!!",
-        "donations": "Donations raised: {donations}"
-    },
     "Offert": {
         "container-content": {
             "uxDesignContent": "<h1>UI/UX design</h1><p>We will ensure a positive experience for customers using your website. A website needs to be functional but also fun to make the user want to return to it. We base our UX activities on five steps:<br><br>1) User research - we start every project by identifying consumer needs; we can conduct focus studies, in-depth interview sessions, eye tracker research for you;<br> 2) Web-based analysis using professional tools, e.g. IBM Tealeaf;<br> 3) Expert audits - we will identify those areas that may be negatively affecting functionality and conversion;<br> 4) Design - by gathering hard data on user behaviour, our mobile web solutions are realistically tailored to users' expectations;<br>5) Usability testing - we check concepts and design assumptions before implementation using user testing and A/B testing on our Abee TST platform.<br></p>",
